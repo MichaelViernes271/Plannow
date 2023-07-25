@@ -1,0 +1,99 @@
+:root {
+   --green-color-h: 81;
+   --green-color-s: 50%;
+   --green-color-l: 41%;
+  
+   --black-color-h: 240;
+   --black-color-s: 12%;
+   --black-color-l: 19%;
+  
+   --blue-color-h: 183;
+   --blue-color-s: 49%;
+   --blue-color-l: 27%;
+
+   --green-color: hsl(var(--green-color-h), var(--green-color-s), var(--green-color-l));
+   --green-color-10: hsl(var(--green-color-h), var(--green-color-s), calc(var(--green-color-l) + 5%));
+   --green-color-20: hsl(var(--green-color-h), var(--green-color-s), calc(var(--green-color-l) + 10%));
+   --green-color-30: hsl(var(--green-color-h), var(--green-color-s), calc(var(--green-color-l) + 15%));
+   --green-color-40: hsl(var(--green-color-h), var(--green-color-s), calc(var(--green-color-l) + 20%));
+    --green-color-50: hsl(var(--green-color-h), var(--green-color-s), calc(var(--green-color-l) + 25%));
+    --green-color-60: hsl(var(--green-color-h), var(--green-color-s), calc(var(--green-color-l) + 30%));
+    --green-color-70: hsl(var(--green-color-h), var(--green-color-s), calc(var(--green-color-l) + 35%));
+    --green-color-80: hsl(var(--green-color-h), var(--green-color-s), calc(var(--green-color-l) + 40%));
+  
+    --black-color: hsl(var(--black-color-h), var(--black-color-s), var(--black-color-l));
+    --black-color-10: hsl(var(--black-color-h), var(--black-color-s), calc(var(--black-color-l) + 5%));
+    --black-color-20: hsl(var(--black-color-h), var(--black-color-s), calc(var(--black-color-l) + 10%));
+    --black-color-30: hsl(var(--black-color-h), var(--black-color-s), calc(var(--black-color-l) + 15%));
+    --black-color-40: hsl(var(--black-color-h), var(--black-color-s), calc(var(--black-color-l) + 20%));
+    --black-color-50: hsl(var(--black-color-h), var(--black-color-s), calc(var(--black-color-l) + 25%));
+    --black-color-60: hsl(var(--black-color-h), var(--black-color-s), calc(var(--black-color-l) + 30%));
+    --black-color-70: hsl(var(--black-color-h), var(--black-color-s), calc(var(--black-color-l) + 35%));
+    --black-color-80: hsl(var(--black-color-h), var(--black-color-s), calc(var(--black-color-l) + 40%));
+  
+    --blue-color: hsl(var(--blue-color-h), var(--blue-color-s), var(--blue-color-l));
+    --blue-color-10: hsl(var(--blue-color-h), var(--blue-color-s), calc(var(--blue-color-l) + 5%));
+    --blue-color-20: hsl(var(--blue-color-h), var(--blue-color-s), calc(var(--blue-color-l) + 10%));
+    --blue-color-30: hsl(var(--blue-color-h), var(--blue-color-s), calc(var(--blue-color-l) + 15%));
+    --blue-color-40: hsl(var(--blue-color-h), var(--blue-color-s), calc(var(--blue-color-l) + 20%));
+    --blue-color-50: hsl(var(--blue-color-h), var(--blue-color-s), calc(var(--blue-color-l) + 25%));
+    --blue-color-60: hsl(var(--blue-color-h), var(--blue-color-s), calc(var(--blue-color-l) + 30%));
+    --blue-color-70: hsl(var(--blue-color-h), var(--blue-color-s), calc(var(--blue-color-l) + 35%));
+    --blue-color-80: hsl(var(--blue-color-h), var(--blue-color-s), calc(var(--blue-color-l) + 40%));
+  
+  
+  /* App Theme / Brand */
+  --primary-color: var(--black-color-10);
+  --primary-border-color: var(--green-color-10);
+  --primary-hover-color: var(--green-color);
+}
+
+.app-styleguide {
+  font-family: "Helvetica", sans-serif;
+  margin-top: 16px
+}
+
+.app-styleguide > * {
+  margin-top: 16px
+}
+
+.app-styleguide button {
+  font-size: 1rem;
+  width: 8em;
+  padding: 0.25em;
+  border: 0.125em solid transparent;
+  border-radius: 0.5em;
+  background: var(--primary-color);
+  color: white;
+}
+
+.app-styleguide button:hover {
+  background: var(--primary-hover-color);
+}
+
+.app-styleguide button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.app-styleguide a {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.app-styleguide a:hover {
+  font-size: 1rem;
+  color: var(--primary-hover-color);
+}
+
+.app-styleguide input {
+  font-size: 1rem;
+  padding: 0.25em;
+  border: 0.125em solid var(--primary-border-color);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  background-color: var(--primary-border-color);
+}
+
+.app-styleguide input:focus {
+  background-color: white;
+}
