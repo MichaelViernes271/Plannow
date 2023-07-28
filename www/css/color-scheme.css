@@ -46,23 +46,35 @@
   --primary-color: var(--black-color-10);
   --primary-border-color: var(--green-color-10);
   --primary-hover-color: var(--green-color);
+
+/*  App bolder color */
+  --secondary-color: var(--black-color-30);
+  --secondary-border-color: var(--green-color-30);
 }
 
 .app-styleguide {
   font-family: "Helvetica", sans-serif;
-  margin-top: 16px
+  margin-top: 16px;
+  background: var(--primary-color);
+}
+
+.app-styleguide.secondary {
+  font-family: "Helvetica", sans-serif;
+  margin-top: 16px;
+  background: var(--secondary-color);
 }
 
 .app-styleguide > * {
   margin-top: 16px
 }
 
-.app-styleguide button {
+button.app-styleguide {
   font-size: 1rem;
-  width: 8em;
+  width: 2rem;
   padding: 0.25em;
-  border: 0.125em solid transparent;
-  border-radius: 0.5em;
+  margin: auto;
+  margin-top: 1%;
+  border-radius: 25px;
   background: var(--primary-color);
   color: white;
 }
@@ -96,4 +108,20 @@
 
 .app-styleguide input:focus {
   background-color: white;
+}
+
+.color{
+  border: white solid 1px;
+}
+
+.color.green{
+  background-color: var(--green-color);
+}
+
+.color.black{
+  background-color: var(--black-color);
+}
+
+.color.blue{
+  background-color: var(--blue-color);
 }
