@@ -38,11 +38,13 @@ under the License.
             referrerpolicy="no-referrer"
             />
             <link rel="stylesheet" href="css/style.css" />
-            <title>Calendar with Events</title>
+            <link rel="stylesheet" href="css/navbar.css">
+            <link rel="stylesheet" href="css/color-scheme.css">
+            <title>Plannow - calendar</title>
             
         </head>
         <body>
-            <div class="container">
+            <div class="container" style="margin-bottom: 10%">
                 <div class="left">
                     <div class="calendar">
                         <div class="month">
@@ -105,11 +107,28 @@ under the License.
                     </div>
                 </div>
                 <button class="add-event">
-                <i class="fas fa-plus"></i>
+                <i class="fas fa-plus"><img src="img/add.png" alt="add" width=30 class=""></i>
                 </button>
             </div>
+            
+            <!-- fixed bottom navbar -->
+            <div class="navbar">
+                <div class="scrollmenu">
+                    <a href="index.html" class="active">Planner</a>
+                    <a href="note.html">Notes</a>
+                    <!-- colorscheme -->
+                    <div style="text-align:center">
+                        <button class="dot app-styleguide color black"></button>
+                        <button class="dot app-styleguide color green"></button>
+                        <button class="dot app-styleguide color blue"></button>
+                    </div>
+                </div>
+            </div>
+            <!-- .navbar -->
+            
             <script src="js/script.js"></script>
             <script src="cordova.js"></script>
             <script src="js/index.js"></script>
+            <script src="js/color-scheme.js"></script>
         </body>
     </html>
